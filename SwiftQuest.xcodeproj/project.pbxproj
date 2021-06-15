@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B068ACE2679266F006078DE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B068ACD2679266F006078DE /* Network.swift */; };
 		1B3E846026791F8900CB051C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E845F26791F8900CB051C /* R.generated.swift */; };
 		1B9FB0192679127100979B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB0182679127100979B55 /* AppDelegate.swift */; };
 		1B9FB01B2679127100979B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB01A2679127100979B55 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B068ACD2679266F006078DE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B3E845F26791F8900CB051C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = SwiftQuest/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1B9FB0152679127100979B55 /* SwiftQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9FB0182679127100979B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				1B9FB0212679127200979B55 /* Assets.xcassets */,
 				1B9FB0262679127200979B55 /* Info.plist */,
 				1B3E845F26791F8900CB051C /* R.generated.swift */,
+				1B068ACD2679266F006078DE /* Network.swift */,
 			);
 			path = SwiftQuest;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				1B9FB01D2679127100979B55 /* SignInViewController.swift in Sources */,
 				1B9FB0192679127100979B55 /* AppDelegate.swift in Sources */,
+				1B068ACE2679266F006078DE /* Network.swift in Sources */,
 				1B3E846026791F8900CB051C /* R.generated.swift in Sources */,
 				1B9FB01B2679127100979B55 /* SceneDelegate.swift in Sources */,
 				1B9FB02D26791A5F00979B55 /* MainViewController.swift in Sources */,

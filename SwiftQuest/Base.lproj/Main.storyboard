@@ -22,12 +22,18 @@
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="loginTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="BAQ-jk-3RG"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-SZ-slP">
                                 <rect key="frame" x="20" y="328" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZyU-oP-jdn"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt7-DM-Vb7">
                                 <rect key="frame" x="33" y="462" width="348" height="55"/>
@@ -44,7 +50,17 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="acceptButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPV-S4-IoA"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-GW-Tk6">
+                                <rect key="frame" x="186" y="176" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,6 +76,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xt7-DM-Vb7" secondAttribute="trailing" constant="33" id="wAL-B8-hQa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="4LJ-GW-Tk6" id="yZB-GY-hST"/>
+                        <outlet property="loginTextField" destination="Xbb-pQ-deV" id="szE-mS-iia"/>
+                        <outlet property="passwordTextField" destination="Iri-SZ-slP" id="KSe-si-OTK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
