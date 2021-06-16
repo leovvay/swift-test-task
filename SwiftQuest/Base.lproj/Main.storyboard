@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftQuest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="244" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <connections>
                                     <action selector="loginTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="BAQ-jk-3RG"/>
                                 </connections>
@@ -30,7 +30,7 @@
                                 <rect key="frame" x="20" y="328" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <connections>
                                     <action selector="passwordTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZyU-oP-jdn"/>
                                 </connections>
@@ -77,6 +77,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="acceptButton" destination="Xt7-DM-Vb7" id="Izs-mu-rOd"/>
                         <outlet property="errorLabel" destination="4LJ-GW-Tk6" id="yZB-GY-hST"/>
                         <outlet property="loginTextField" destination="Xbb-pQ-deV" id="szE-mS-iia"/>
                         <outlet property="passwordTextField" destination="Iri-SZ-slP" id="KSe-si-OTK"/>
@@ -86,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-188.40579710144928" y="113.83928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="nDC-1n-sny">
             <objects>
-                <viewController id="9r8-Hf-PrI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9r8-Hf-PrI" customClass="MainViewController" customModule="SwiftQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tcm-4e-yLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
