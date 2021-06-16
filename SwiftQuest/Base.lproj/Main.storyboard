@@ -12,7 +12,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="SwiftQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,11 +54,10 @@
                                     <action selector="acceptButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPV-S4-IoA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-GW-Tk6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-GW-Tk6">
                                 <rect key="frame" x="186" y="176" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -68,10 +67,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iri-SZ-slP" secondAttribute="trailing" constant="20" id="2Oa-tw-mxI"/>
                             <constraint firstItem="Iri-SZ-slP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8bd-17-oFc"/>
                             <constraint firstItem="Xbb-pQ-deV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="9XY-8R-6uo"/>
+                            <constraint firstItem="4LJ-GW-Tk6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WIk-Gj-pzV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xbb-pQ-deV" secondAttribute="trailing" constant="20" id="dtt-f7-ANs"/>
                             <constraint firstItem="Xbb-pQ-deV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fKE-yP-WNO"/>
                             <constraint firstItem="Iri-SZ-slP" firstAttribute="top" secondItem="Xbb-pQ-deV" secondAttribute="bottom" constant="50" id="gJm-nt-ViO"/>
                             <constraint firstItem="Xt7-DM-Vb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="nOj-f7-9Ux"/>
+                            <constraint firstItem="Xbb-pQ-deV" firstAttribute="top" secondItem="4LJ-GW-Tk6" secondAttribute="bottom" constant="47" id="vBa-Fa-bZQ"/>
                             <constraint firstItem="Xt7-DM-Vb7" firstAttribute="top" secondItem="Iri-SZ-slP" secondAttribute="bottom" constant="100" id="vYl-nd-UQZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xt7-DM-Vb7" secondAttribute="trailing" constant="33" id="wAL-B8-hQa"/>
                         </constraints>
@@ -159,6 +160,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

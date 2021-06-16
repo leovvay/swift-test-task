@@ -40,14 +40,20 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.isHidden = true
+        acceptButton.isHidden = true
     }
     
     private func acceptButtonHidden() -> Bool {
+        print(loginTextField.isEmpty)
+        print(passwordTextField.isEmpty)
+        print("===========")
         if loginTextField.isEmpty || passwordTextField.isEmpty {
+            errorLabel.isHidden = false
             errorLabel.text = "Error. Fill all fields."
             return true
         }
         if !loginTextField.hasValidEmail {
+            errorLabel.isHidden = false
             errorLabel.text = "Error. Invalid email."
             return true
         }
