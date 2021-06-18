@@ -17,6 +17,8 @@
 		1B9FB0252679127200979B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9FB0232679127200979B55 /* LaunchScreen.storyboard */; };
 		1B9FB02D26791A5F00979B55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB02C26791A5F00979B55 /* MainViewController.swift */; };
 		1BC1C79D267A5DF20036B104 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C79C267A5DF20036B104 /* R.generated.swift */; };
+		1BC1C79F267BA7F60036B104 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C79E267BA7F60036B104 /* PictureCell.swift */; };
+		1BC1C7A1267BAB4D0036B104 /* PictureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */; };
 		D2A6945B8625982AEB30F2B5 /* libPods-SwiftQuest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F79E0FF4995A499FD9DB9 /* libPods-SwiftQuest.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		1B9FB0262679127200979B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9FB02C26791A5F00979B55 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1BC1C79C267A5DF20036B104 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1BC1C79E267BA7F60036B104 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInfo.swift; sourceTree = "<group>"; };
 		416F79E0FF4995A499FD9DB9 /* libPods-SwiftQuest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftQuest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6977747427783DC49AAA14AB /* Pods-SwiftQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuest.debug.xcconfig"; path = "Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		D04687A8DFA7C6DB1966DD36 /* Pods-SwiftQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuest.release.xcconfig"; path = "Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				1B9FB0262679127200979B55 /* Info.plist */,
 				1B068ACD2679266F006078DE /* Network.swift */,
 				1B043B9D267A522500223051 /* Utils.swift */,
+				1BC1C79E267BA7F60036B104 /* PictureCell.swift */,
+				1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */,
 			);
 			path = SwiftQuest;
 			sourceTree = "<group>";
@@ -219,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC1C79F267BA7F60036B104 /* PictureCell.swift in Sources */,
 				1B9FB01D2679127100979B55 /* SignInViewController.swift in Sources */,
 				1BC1C79D267A5DF20036B104 /* R.generated.swift in Sources */,
+				1BC1C7A1267BAB4D0036B104 /* PictureInfo.swift in Sources */,
 				1B9FB0192679127100979B55 /* AppDelegate.swift in Sources */,
 				1B068ACE2679266F006078DE /* Network.swift in Sources */,
 				1B043B9E267A522500223051 /* Utils.swift in Sources */,

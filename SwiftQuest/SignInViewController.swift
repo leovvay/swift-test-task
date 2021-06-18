@@ -44,9 +44,6 @@ class SignInViewController: UIViewController {
     }
     
     private func acceptButtonHidden() -> Bool {
-        print(loginTextField.isEmpty)
-        print(passwordTextField.isEmpty)
-        print("===========")
         if loginTextField.isEmpty || passwordTextField.isEmpty {
             errorLabel.isHidden = false
             errorLabel.text = "Error. Fill all fields."

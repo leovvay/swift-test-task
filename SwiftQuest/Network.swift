@@ -1,5 +1,6 @@
 import Foundation
 import Alamofire
+import Kingfisher
 
 class Network {
     private static let loginUrl = "google.com"
