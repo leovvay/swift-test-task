@@ -63,30 +63,30 @@ class MoyaNetworkService: NetworkServiceProtocol {
         provider = MoyaProvider<Service>()
     }
     
-    func login(login: String, password: String, handler: @escaping () -> ()) {
+    func login(login: String, password: String, handler: @escaping (Result<Void, Error>) -> ()) {
         provider.request(.login(login: login, password: password)) { result in
             DispatchQueue.main.async {
                 switch result {
                 
                 case .success(_):
-                    handler()
+                    handler(.success(Void()))
                     
-                case .failure(let error):
-                    print(error.errorDescription ?? "")
+                case .failure(_):
+                    handler(.failure(NetworkErrors.SomeNetworkError))
                 }
             }
         }
     }
     
-    func getImage(handler: @escaping (Data) -> ()) {
+    func getImage(handler: @escaping (Result<Data, Error>) -> ()) {
         provider.request(.getImages) { result in
             DispatchQueue.main.async {
                 switch result {
                 
                 case .success(let response):
-                    handler(response.data)
-                case .failure(let error):
-                    print(error.errorDescription ?? "")
+                    handler(.success(response.data))
+                case .failure(_):
+                    handler(.failure(NetworkErrors.SomeNetworkError))
                 }
             }
         }

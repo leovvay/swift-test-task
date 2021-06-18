@@ -11,6 +11,7 @@
 		0A58AAF0267A4D670091513A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58AAEE267A4D670091513A /* ImageCell.swift */; };
 		0A58AAF1267A4D670091513A /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A58AAEF267A4D670091513A /* ImageCell.xib */; };
 		0A58AAF3267A60650091513A /* UICollectionViewCell+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58AAF2267A60650091513A /* UICollectionViewCell+ActivityIndicator.swift */; };
+		0A66937A267CBAC10047D8DB /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A669379267CBAC10047D8DB /* NetworkErrors.swift */; };
 		0A7D0A2B26712F1700F9745B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D0A2A26712F1700F9745B /* AppDelegate.swift */; };
 		0A7D0A2D26712F1700F9745B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D0A2C26712F1700F9745B /* SceneDelegate.swift */; };
 		0A7D0A2F26712F1700F9745B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D0A2E26712F1700F9745B /* LoginViewController.swift */; };
@@ -33,6 +34,7 @@
 		0A58AAEE267A4D670091513A /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		0A58AAEF267A4D670091513A /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		0A58AAF2267A60650091513A /* UICollectionViewCell+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		0A669379267CBAC10047D8DB /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		0A7D0A2726712F1700F9745B /* swift-test-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-test-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7D0A2A26712F1700F9745B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7D0A2C26712F1700F9745B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				0A7D0A442672841C00F9745B /* Coordinator.swift */,
 				0A7D0A5626728B4500F9745B /* MoyaNetworkService.swift */,
 				0A7D0A5826728B5700F9745B /* NetworkServiceProtocol.swift */,
+				0A669379267CBAC10047D8DB /* NetworkErrors.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				0A7D0A2F26712F1700F9745B /* LoginViewController.swift in Sources */,
 				0A7D0A5726728B4500F9745B /* MoyaNetworkService.swift in Sources */,
 				0A7D0A5926728B5700F9745B /* NetworkServiceProtocol.swift in Sources */,
+				0A66937A267CBAC10047D8DB /* NetworkErrors.swift in Sources */,
 				0A58AAED267922690091513A /* UIViewController+Alert.swift in Sources */,
 				0A7D0A472672851500F9745B /* UIViewController+StoryboardInit.swift in Sources */,
 				0A7D0A2B26712F1700F9745B /* AppDelegate.swift in Sources */,

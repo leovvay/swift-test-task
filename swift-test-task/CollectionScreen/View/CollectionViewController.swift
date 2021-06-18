@@ -12,6 +12,7 @@ protocol CollectionViewProtocol: AnyObject {
     func reloadData()
     func showActivity()
     func hideActivity()
+    func showError(with description: String)
 }
 
 class CollectionViewController: UIViewController, StoryboardInit {
@@ -45,6 +46,9 @@ class CollectionViewController: UIViewController, StoryboardInit {
 }
 
 extension CollectionViewController: CollectionViewProtocol {
+    func showError(with description: String) {
+        self.showAlert(with: nil, and: description)
+    }
     
     func reloadItemAt(indexPath: IndexPath) {
         collection.reloadItems(at: [indexPath])

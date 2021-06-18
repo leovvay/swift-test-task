@@ -8,6 +8,6 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    func login(login: String, password: String, handler: @escaping () -> ())
-    func getImage(handler: @escaping (Data) -> ())
+    func login(login: String, password: String, handler: @escaping (Result<Void, Error>) -> ())
+    func getImage(handler: @escaping (Result<Data, Error>) -> ())
 }

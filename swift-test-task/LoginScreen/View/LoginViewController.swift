@@ -13,7 +13,7 @@ protocol LoginViewProtocol: AnyObject {
     
     func showActivity()
     func hideActivity()
-    func showValidationAlert(with title: String, and text: String)
+    func showLoginAlert(with title: String?, and text: String)
 }
 
 class LoginViewController: UIViewController, StoryboardInit {
@@ -48,7 +48,7 @@ extension LoginViewController: LoginViewProtocol {
         return password.text
     }
     
-    func showValidationAlert(with title: String, and text: String) {
+    func showLoginAlert(with title: String?, and text: String) {
         self.showAlert(with: title, and: text)
     }
 }

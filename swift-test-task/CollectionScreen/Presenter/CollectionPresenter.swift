@@ -33,10 +33,17 @@ class CollectionPresenter: CollectionPresenterProtocol {
     
     func addImage() {
         self.view.showActivity()
-        networkService.getImage { [unowned self] imageData in
-            self.images.append(imageData)
-            self.view.reloadData()
-            self.view.hideActivity()
+        networkService.getImage { [unowned self] response in
+            switch response {
+            
+            case .success(let imageData):
+                self.images.append(imageData)
+                self.view.reloadData()
+                self.view.hideActivity()
+            case .failure(let error):
+                self.view.showError(with: error.localizedDescription)
+                self.view.hideActivity()
+            }
         }
     }
     
@@ -46,10 +53,17 @@ class CollectionPresenter: CollectionPresenterProtocol {
     
     func reloadImages() {
         for (index, _) in images.enumerated() {
-            networkService.getImage { [unowned self] newImageData in
-                self.images.remove(at: index)
-                self.images.insert(newImageData, at: index)
-                self.view.reloadItemAt(indexPath: IndexPath(row: index, section: 0))
+            networkService.getImage { [unowned self] response in
+                switch response {
+                
+                case .success(let newImageData):
+                    self.images.remove(at: index)
+                    self.images.insert(newImageData, at: index)
+                    self.view.reloadItemAt(indexPath: IndexPath(row: index, section: 0))
+                case .failure(let error):
+                    self.view.showError(with: error.localizedDescription)
+                }
+                
             }
         }
     }

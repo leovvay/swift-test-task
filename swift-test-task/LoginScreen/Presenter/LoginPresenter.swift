@@ -27,12 +27,20 @@ class LoginPresenter: LoginPresenterProtocol {
     func onLoginTap() {
         view.showActivity()
         if view.loginValue?.count ?? 0 > 1 && view.passwordValue?.count ?? 0 > 1 {
-            networkService.login(login: view.loginValue!, password: view.passwordValue!) { [unowned self] in
-                view.hideActivity()
-                self.coordinator.goMainScreen()
+            networkService.login(login: view.loginValue!, password: view.passwordValue!) { [unowned self] result in
+                switch result {
+                
+                case .success():
+                    view.hideActivity()
+                    self.coordinator.goMainScreen()
+                case .failure(let error):
+                    self.view.showLoginAlert(with: nil, and: error.localizedDescription)
+                }
             }
         } else {
-            view.showValidationAlert(with: "Oops!", and: "Login or password is empty!")
+            view.showLoginAlert(with: "Oops!", and: "Login or password is empty!")
         }
     }
 }
+
+
