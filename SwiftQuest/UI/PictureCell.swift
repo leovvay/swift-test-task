@@ -11,9 +11,13 @@ import Kingfisher
 class PictureCell: UICollectionViewCell {
     @IBOutlet weak var pictureView: UIImageView!
     
-    func setPicture(picture: PictureInfo) -> Self {
+    override func awakeFromNib() {
+        super.awakeFromNib()
         backgroundColor = UIColor.lightGray
         pictureView.kf.indicatorType = .activity
+    }
+    
+    func setPicture(picture: PictureInfo) -> Self {
         
         if picture.imageUrl == nil {
             picture.generateUrl()

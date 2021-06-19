@@ -18,6 +18,13 @@ extension UITextField {
         }
         return email.isValidEmail
     }
+    var hasValidPaswword: Bool {
+        guard let password = text else {
+            print("Error. No Password")
+            return false
+        }
+        return password.isValidPassword
+    }
 }
 
 extension String {
@@ -25,6 +32,9 @@ extension String {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
+    }
+    var isValidPassword: Bool {
+        count > 5
     }
 }
 
@@ -39,3 +49,17 @@ extension UIViewController {
     }
 }
 
+extension UICollectionView {
+    func scrollToLast() {
+        guard numberOfSections > 0 else {
+            return
+        }
+        let lastSection = numberOfSections - 1
+        guard numberOfItems(inSection: lastSection) > 0 else {
+            return
+        }
+        let lastItemIndexPath = IndexPath(item: numberOfItems(inSection: lastSection) - 1,
+                                          section: lastSection)
+        scrollToItem(at: lastItemIndexPath, at: .right, animated: true)
+    }
+}

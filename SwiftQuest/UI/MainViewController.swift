@@ -6,27 +6,18 @@
 //
 
 import UIKit
-import Kingfisher
 
 class MainViewController: UIViewController {
-    var pictures = [PictureInfo]()
+    
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    @IBAction func addNewPicture(_ sender: UIButton) {
-        pictures.append(PictureInfo())
-        collectionView.reloadData()
-    }
-    
-    @IBAction func reloadAllRictures(_ sender: UIButton) {
-        pictures.removeAll()
-        createInitialData()
-        collectionView.reloadData()
-    }
+
+    private var pictures = [PictureInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createInitialData()
     }
+    
     private func createInitialData() {
         for _ in 1...20 {
             pictures.append(PictureInfo())
@@ -34,7 +25,23 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//MARK: - IBActions
+extension MainViewController {
+    @IBAction func addNewPicture(_ sender: UIButton) {
+        pictures.append(PictureInfo())
+        collectionView.reloadData()
+        collectionView.scrollToLast()
+    }
+    
+    @IBAction func reloadAllRictures(_ sender: UIButton) {
+        pictures.removeAll()
+        createInitialData()
+        collectionView.reloadData()
+    }
+}
+
+//MARK: - UICollectionViewDataSource
+extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pictures.count
     }

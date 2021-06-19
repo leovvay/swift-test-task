@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-pQ-deV">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-pQ-deV">
                                 <rect key="frame" x="20" y="244" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -26,7 +26,7 @@
                                     <action selector="loginTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="BAQ-jk-3RG"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-SZ-slP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-SZ-slP">
                                 <rect key="frame" x="20" y="328" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.93362981079999996" green="0.93591129780000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -54,8 +54,8 @@
                                     <action selector="acceptButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPV-S4-IoA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-GW-Tk6">
-                                <rect key="frame" x="186" y="176" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-GW-Tk6">
+                                <rect key="frame" x="20" y="176.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,6 +67,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iri-SZ-slP" secondAttribute="trailing" constant="20" id="2Oa-tw-mxI"/>
                             <constraint firstItem="Iri-SZ-slP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8bd-17-oFc"/>
                             <constraint firstItem="Xbb-pQ-deV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="9XY-8R-6uo"/>
+                            <constraint firstItem="4LJ-GW-Tk6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IAN-Kl-J1r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4LJ-GW-Tk6" secondAttribute="trailing" constant="20" id="Plt-Kk-mR1"/>
                             <constraint firstItem="4LJ-GW-Tk6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WIk-Gj-pzV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xbb-pQ-deV" secondAttribute="trailing" constant="20" id="dtt-f7-ANs"/>
                             <constraint firstItem="Xbb-pQ-deV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fKE-yP-WNO"/>

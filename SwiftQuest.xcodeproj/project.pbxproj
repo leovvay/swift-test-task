@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8069F38176B7C752AE498D /* Pods_SwiftQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF8525FF4D3840C37F184A2 /* Pods_SwiftQuest.framework */; };
 		1B043B9E267A522500223051 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B043B9D267A522500223051 /* Utils.swift */; };
 		1B068ACE2679266F006078DE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B068ACD2679266F006078DE /* Network.swift */; };
 		1B9FB0192679127100979B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB0182679127100979B55 /* AppDelegate.swift */; };
-		1B9FB01B2679127100979B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB01A2679127100979B55 /* SceneDelegate.swift */; };
 		1B9FB01D2679127100979B55 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FB01C2679127100979B55 /* SignInViewController.swift */; };
 		1B9FB0202679127100979B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9FB01E2679127100979B55 /* Main.storyboard */; };
 		1B9FB0222679127200979B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9FB0212679127200979B55 /* Assets.xcassets */; };
@@ -19,7 +19,6 @@
 		1BC1C79D267A5DF20036B104 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C79C267A5DF20036B104 /* R.generated.swift */; };
 		1BC1C79F267BA7F60036B104 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C79E267BA7F60036B104 /* PictureCell.swift */; };
 		1BC1C7A1267BAB4D0036B104 /* PictureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */; };
-		D2A6945B8625982AEB30F2B5 /* libPods-SwiftQuest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F79E0FF4995A499FD9DB9 /* libPods-SwiftQuest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		1B068ACD2679266F006078DE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B9FB0152679127100979B55 /* SwiftQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9FB0182679127100979B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B9FB01A2679127100979B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1B9FB01C2679127100979B55 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1B9FB01F2679127100979B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9FB0212679127200979B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,8 +35,8 @@
 		1BC1C79C267A5DF20036B104 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1BC1C79E267BA7F60036B104 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInfo.swift; sourceTree = "<group>"; };
-		416F79E0FF4995A499FD9DB9 /* libPods-SwiftQuest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftQuest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6977747427783DC49AAA14AB /* Pods-SwiftQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuest.debug.xcconfig"; path = "Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF8525FF4D3840C37F184A2 /* Pods_SwiftQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04687A8DFA7C6DB1966DD36 /* Pods-SwiftQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftQuest.release.xcconfig"; path = "Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A6945B8625982AEB30F2B5 /* libPods-SwiftQuest.a in Frameworks */,
+				0C8069F38176B7C752AE498D /* Pods_SwiftQuest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,26 +74,41 @@
 			isa = PBXGroup;
 			children = (
 				1B9FB0182679127100979B55 /* AppDelegate.swift */,
-				1B9FB01A2679127100979B55 /* SceneDelegate.swift */,
-				1B9FB01C2679127100979B55 /* SignInViewController.swift */,
 				1BC1C79C267A5DF20036B104 /* R.generated.swift */,
-				1B9FB02C26791A5F00979B55 /* MainViewController.swift */,
-				1B9FB0232679127200979B55 /* LaunchScreen.storyboard */,
-				1B9FB01E2679127100979B55 /* Main.storyboard */,
+				1BC1C7A3267E0BA50036B104 /* UI */,
+				1BC1C7A2267E0B900036B104 /* Data */,
 				1B9FB0212679127200979B55 /* Assets.xcassets */,
 				1B9FB0262679127200979B55 /* Info.plist */,
-				1B068ACD2679266F006078DE /* Network.swift */,
 				1B043B9D267A522500223051 /* Utils.swift */,
-				1BC1C79E267BA7F60036B104 /* PictureCell.swift */,
-				1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */,
 			);
 			path = SwiftQuest;
+			sourceTree = "<group>";
+		};
+		1BC1C7A2267E0B900036B104 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1B068ACD2679266F006078DE /* Network.swift */,
+				1BC1C7A0267BAB4D0036B104 /* PictureInfo.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1BC1C7A3267E0BA50036B104 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B9FB0232679127200979B55 /* LaunchScreen.storyboard */,
+				1B9FB01E2679127100979B55 /* Main.storyboard */,
+				1B9FB01C2679127100979B55 /* SignInViewController.swift */,
+				1B9FB02C26791A5F00979B55 /* MainViewController.swift */,
+				1BC1C79E267BA7F60036B104 /* PictureCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		2E8EF12460F50DAB3D84E575 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				416F79E0FF4995A499FD9DB9 /* libPods-SwiftQuest.a */,
+				BEF8525FF4D3840C37F184A2 /* Pods_SwiftQuest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 				1B9FB0112679127100979B55 /* Sources */,
 				1B9FB0122679127100979B55 /* Frameworks */,
 				1B9FB0132679127100979B55 /* Resources */,
+				8BD76FF85A542206BB4B9E4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,11 +204,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		8BD76FF85A542206BB4B9E4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftQuest/Pods-SwiftQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		B7C3CEF6A1BEB2860D5888D0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -232,7 +263,6 @@
 				1B9FB0192679127100979B55 /* AppDelegate.swift in Sources */,
 				1B068ACE2679266F006078DE /* Network.swift in Sources */,
 				1B043B9E267A522500223051 /* Utils.swift in Sources */,
-				1B9FB01B2679127100979B55 /* SceneDelegate.swift in Sources */,
 				1B9FB02D26791A5F00979B55 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
